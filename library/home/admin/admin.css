@@ -1,0 +1,45 @@
+body{
+    font-family: 'Roboto', sans-serif;
+    background-image: linear-gradient(to right, rgb(241, 185, 230) , rgb(132, 255, 226));
+}
+.tit{
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(157, 0, 157);
+    font-weight: 700;
+}
+
+.op{
+    display: grid;
+    row-gap: 40px;
+    justify-content: space-evenly;
+    
+
+}
+
+.op button{
+    width: 150px;
+    height: 35px;
+    background-color: rgba(219, 113, 240, 0.714);
+    border-radius: 4px;
+    border-color: transparent;
+    transition: 0.5s;
+
+}
+
+.search{
+    margin-top: 50px;
+}
+
+.op button:hover{
+    background-color: lime;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    
+
+}
+
+.del button:hover{
+    background-color: red;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+    
+}

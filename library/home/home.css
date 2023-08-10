@@ -1,0 +1,70 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+.nav{
+    padding-top: 15px;
+    width: auto;
+    height: 35px;
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+    
+    
+    
+}
+.nav a{
+    
+    margin : 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.box1{
+    
+    width: auto;
+    height: 400px;
+    margin: 20px;
+    border-radius: 3px;
+    
+    
+    
+
+}
+.bimg{
+    
+    width: auto;
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+    
+}
+.heading h2{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    color: purple;
+    
+}
+.show {
+    display: grid;
+    grid-template-columns: 300px,300px,300px;
+    text-align: center;
+
+}
+.books{
+    background-color: rgba(255, 192, 203, 0.707);
+    
+    
+}
+.aut{
+    background-color: rgba(0, 255, 0, 0.464);
+}
+.iss{
+    background-color: rgba(0, 255, 255, 0.493);
+}

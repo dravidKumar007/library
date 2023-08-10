@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>admin</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Teko:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <div class="tit">
+        <h1>ADMIN PAGE</h1>
+    </div>
+
+    <div class="op">
+        <div class="search">
+            <button onclick="ser()">Search Book</button>
+        </div>
+        <div class="issue">
+            <button onclick="isu()">Issue Book</button>
+        </div>
+        <div class="issued">
+            <button onclick="iss()">View Issued</button>
+        </div>
+        <div class="add">
+            <button onclick="ad()">Add Book</button>
+        </div>
+        <div class="del">
+            <button onclick="del()">Delete Book</button>
+        </div>
+    </div>
+
+
+    <script>
+        function ser(){
+            window.open("search/search.html")
+        }
+
+    </script>
+</body>
+</html>
