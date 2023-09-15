@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" id="theme-stylesheet" href="light.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <script>
+        const themeToggleButton = document.getElementById('dark-mode-toggle');
+        const themeStylesheet = document.getElementById('theme-stylesheet');
+        let isDarkTheme = false;
+      
+        themeToggleButton.addEventListener('click', () => {
+          isDarkTheme = !isDarkTheme;
+      
+          if (isDarkTheme) {
+            themeStylesheet.href = 'dark.css';
+          } else {
+              themeStylesheet.href = 'light.css';
+            }
+        });
+        </script>
+    <div class="im">
+        <img src="easw.png" alt="EASWARI ENGINEERING COLLEGE">
+        <h1>
+            <div class="header-text">EASWARI</div>
+            <div class="sub-header">ENGINEERING COLLEGE</div>
+            <br>
+            <div class="location">Ramapuram,Chennai</div>
+            <br>
+        </h1>
+    </div>
+    
+    <div  align="center">
+        <h1  align="center"class="programme-text f">PROGRAMME: B.E COMPUTER SCIENCE AND ENGINEERING</h1> <br><br>
+        <div  align="center"class="feedback-text f">Alumni feedback</div>
+        <div  align="center"class="confidential-text f">The information you provide on this questionnaire will be kept completely confidential.<br><h2 >PART A: GENERAL PROGRAM FEEDBACK</h2></div>
+    </div>
+            
+            <table border="1" class="f">
+                <tr>
+                    <th>Questions</th>
+                    <th>To some extent (1)</th>
+                    <th>To a moderate extent (2)</th>
+                    <th>To a great extent (3)</th>
+                </tr>
+              <tr>
+                  <td>1. How did the Computer Science and Engineering faculty respond to your technical needs inside and outside of classrooms?</td>
+                  <td><input type="radio" name="question1" value="1"></td>
+                  <td><input type="radio" name="question1" value="2"></td>
+                  <td><input type="radio" name="question1" value="3"></td>
+                </tr>
+            <tr>
+                <td>2. How helpfully did the lab technicians respond to your needs?</td>
+                <td><input type="radio" name="question2" value="1"></td>
+                <td><input type="radio" name="question2" value="2"></td>
+                <td><input type="radio" name="question2" value="3"></td>
+            </tr>
+            <tr>
+                <td>3. How do you feel the program prepared you for a Computer Science and Engineering career?</td>
+                <td><input type="radio" name="question3" value="1"></td>
+                <td><input type="radio" name="question3" value="2"></td>
+                <td><input type="radio" name="question3" value="3"></td>
+            </tr>
+            <tr>
+                <td>4. How would you rate the student/faculty interaction in the program? Who was your favorite faculty? Why?</td>
+                <td><input type="radio" name="question4" value="1"></td>
+                <td><input type="radio" name="question4" value="2"></td>
+                <td><input type="radio" name="question4" value="3"></td>
+            </tr>
+            <!-- Add more rows for additional questions -->
+            <tr>
+                <td>5. How effective was the counseling from Computer Science Engineering faculty advisor? Explain.</td>
+                <td><input type="radio" name="question5" value="1"></td>
+                <td><input type="radio" name="question5" value="2"></td>
+                <td><input type="radio" name="question5" value="3"></td>
+            </tr>
+            <tr>
+                <td>6. How effective was the counseling from career guidance advisor? Explain.</td>
+                <td><input type="radio" name="question6" value="1"></td>
+                <td><input type="radio" name="question6" value="2"></td>
+                <td><input type="radio" name="question6" value="3"></td>
+            </tr>
+            <tr>
+                <td>7. How would you rate the laboratory facilities? Explain.</td>
+                <td><input type="radio" name="question7" value="1"></td>
+                <td><input type="radio" name="question7" value="2"></td>
+                <td><input type="radio" name="question7" value="3"></td>
+            </tr>
+            <tr>
+                <td>8. How would you rate the classrooms and laboratory environment?</td>
+                <td><input type="radio" name="question8" value="1"></td>
+                <td><input type="radio" name="question8" value="2"></td>
+                <td><input type="radio" name="question8" value="3"></td>
+            </tr>
+            
+            
+      </table>
+        
+    
+        
+        <div style="font-family: Fira Code;" >
+          <h1 class="feedback-text " style="font-size:35px; font-family: Fira Code;">  Program Outcomes</h1>
+        <p class="confidential-text"  style="margin-top: -17px; font-size:25px; font-family: Fira Code;"> At this time you should have attained the required professional, technical, and social experience in the program to practice the following fifteen program outcomes. Please mark on a scale of 0 to 3 (3 being the highest and 0 being the lowest) to indicate your knowledge with the ability to:
+            </p>
+            </div>
+</body>
+</html>

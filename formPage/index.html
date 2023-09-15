@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{transition: background-color 0.3s ease, color 0.3s ease;}
+        body{
+            --bg:var("white");
+            --txt:var("black");
+            margin: 0;
+            padding: 0;
+            background-color: --bg;
+        }
+        .im{
+            display: flex;
+      justify-content: center;
+      align-items: center;
+        }
+        img{
+            /* display: inline;
+            margin-left: 10%;
+            height: 25vw;
+            width: 80vw; */
+            /* display: flex;
+      justify-content: center;
+      align-items: center; */
+            max-width:1000px;
+            max-height: 330px;
+        }
+        @font-face {
+    font-family: 'Fira Code';
+    src: url('FiraCode-Regular.woff') format('woff');
+        }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+    <script>const darkModeToggle = document.getElementById('dark-mode-toggle');
+        const themeStylesheet = document.getElementById('theme-stylesheet');
+        let darkModeEnabled = false;
+        
+        darkModeToggle.addEventListener('click', () => {
+          darkModeEnabled = !darkModeEnabled;
+        
+          if (darkModeEnabled) {
+            document.documentElement.style.setProperty('--bg', 'var(black)');
+            document.documentElement.style.setProperty('--txt', 'var(-whight)');
+          } else {
+            document.documentElement.style.setProperty('--bg', 'var(white)');
+            document.documentElement.style.setProperty('--txt', 'var(black)');
+          }
+        
+          // Toggle the stylesheet between light and dark mode
+          themeStylesheet.href = darkModeEnabled ? 'dark-theme.css' : 'light-theme.css';
+        });</script>
+    <div class="im">
+        <img src="easw.png" alt="EASWARI ENGINEERING COLLEGE">
+        <h1><div style="color: brown ;text-shadow: 0 0 7px rgb(176, 47, 47); font-size:70px; margin-left:px;">  EASWARI </div><div style="color: brown ;text-shadow: 0 0 7px rgb(176, 47, 47);margin-left:8px ; font-size:25px;">ENGINEERING COLLEGE
+        </div><br><div style="color: azure ;background-color: brown; text-shadow:0 0 1px whitesmoke;padding:5px 7px; margin-top: -40px;padding-left: 30px; font-weight:300;">Ramapuram,Chennai</div><br></h1>
+    </div>
+    
+    <div class="im" align="center"><h1 style="margin-top: 70px ;font-family: 'Raleway', sans-serif;color: --txt;text-shadow:0 0 15px whitesmoke;">PROGRAMME: B.E COMPUTER SCIENCE AND ENGINEERING <br><br><div style="color: rgba(255, 0, 0, 0.845); text-shadow: 0 0 17px red;" align="center">Alumni feedback</div><div style="margin-top: 70px ;font-family: 'Raleway', sans-serif;color: rgb(0, 0, 0);text-shadow:0 0 15px whitesmoke;">The information you provide on this questionnaire will be kept completely confidential. </div> </h1>
+    </div>
+</body>
+</html>
